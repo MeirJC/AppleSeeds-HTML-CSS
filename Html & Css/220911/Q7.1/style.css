@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2a4765;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 40px auto;
+}
+
+h2 {
+    clear: both;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.register {
+    float: left;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+}
+
+.submit {
+    float: right;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.05rem;
+}
+
+.round {
+    border-radius: 1.5rem;
+}
+
+.flat.register {
+    background-color: #4484f4;
+}
+
+.flat.submit {
+    background-color: #fcc54d;
+}
+
+.round.register {
+    background-color: #37a855;
+}
+
+.round.submit {
+    background-color: #fb4b69;
+}
+
+.ghost-buttons a.ghost {
+    background-color: transparent;
+}
+
+.ghost.flat.register {
+    border: 2px solid #944c5b;
+    background-color: transparent
+}
+
+.ghost.flat.submit {
+    border: 2px solid #6c4776;
+    background-color: transparent
+}
+
+.ghost.round.register {
+    border: 2px solid #8d854e;
+}
+
+.ghost.round.submit {
+    border: 2px solid #517c86;
+}
+
+/* On Hover actions */
+.flat.register:hover {
+    background-color: #3769be;
+}
+
+.flat.submit:hover {
+    background-color: #c99d3f;
+}
+
+.round.register:hover {
+    background-color: #2b8343;
+}
+
+.round.submit:hover {
+    background-color: #c43b51;
+}
+
+.ghost-buttons a.ghost.flat.register:hover {
+    background-color: #944c5b;
+}
+
+.ghost-buttons a.ghost.flat.submit:hover {
+    background-color: #6c4776;
+}
+
+.ghost-buttons a.ghost.round.register:hover {
+    background-color: #8d854e;
+}
+
+.ghost-buttons a.ghost.round.submit:hover {
+    background-color: #517c86;
+}

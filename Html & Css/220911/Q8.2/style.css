@@ -1,0 +1,35 @@
+#outer {
+    width: 200px;
+    height: 200px;
+    background: darkcyan;
+    margin: 50px;
+}
+
+#inner {
+    width: 50px;
+    height: 50px;
+    background: lightgreen;
+    /* The problem is that the initial code was set to position:absolute
+    which places the element relative to the entire HTML document.
+    The problem is solved using position:relative wich make the position 
+    relative to the parant element initial placement */
+    /*--- Line removed: position: absolute;--- */
+    position: relative;
+    top: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    /* --- The problem was solved by inserting the text to a 
+    block-level elememt which makes the initial plament of 
+    the #inner div under it (since div is a block element too) 
+    that could work with any other block level element such as h1-6 
+    or an inline element that has their display property to display:block --- */
+    /* ---------------------------------------------------------------------- */
+    /* --- Uncomment the font size desired for checking --- */
+    /* font-size: 1rem; */
+    /* font-size: 1.5rem; */
+    /* font-size: 2rem; */
+    /* font-size: 2.5rem; */
+}
