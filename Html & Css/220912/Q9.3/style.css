@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: orange;
+    border: 2px solid #333;
+    margin: 0.075rem 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+aside {
+    border: 2px solid #333;
+    background-color: green;
+    float: left;
+    margin: 0 0.075rem 0 0;
+    box-sizing: border-box;
+    width: 34.75%;
+    height: 12rem;
+}
+
+div {
+    border: 2px solid #333;
+    background-color: purple;
+    float: right;
+    width: 64.75%;
+    margin: 0 0 0.075rem 0rem;
+    box-sizing: border-box;
+    text-align: right;
+    height: 12rem;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: cornflowerblue;
+    border: 2px solid #333;
+    margin: 0.075rem 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div p {
+    margin: 0.25rem 0.5rem;
+}
+
+aside p {
+    margin: 0.25rem 0.5rem;
+}
+
+header:hover,
+aside:hover,
+div:hover,
+footer:hover {
+    border-color: tomato;
+}
+
+@media (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+
+    /* div is the "Main" purple section */
+    div {
+        width: 100%;
+    }
+}
