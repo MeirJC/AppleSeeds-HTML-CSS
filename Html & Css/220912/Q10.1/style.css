@@ -1,0 +1,39 @@
+html {
+    box-sizing: content-box;
+    font-size: 14px;
+}
+
+
+
+
+header {
+    width: 95vw;
+    margin: 3vh auto;
+    background-color: #555;
+}
+
+p {
+    padding: 20px 10px;
+    color: white;
+    line-height: 1.75rem;
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ----- Media Query - Fluit Typography ----- */
+/* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+} */
+@media screen and (min-width: 400px) {
+    html {
+        font-size: calc(14px + 14 * ((100vw - 400px) / 600));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 24px;
+    }
+}
