@@ -1,0 +1,22 @@
+section {
+    padding: 1.6rem;
+    line-height: 1.4rem;
+}
+
+span[tooltip="mark-here"] {
+    font-weight: bold;
+    color: indigo;
+    position: relative;
+}
+
+span[tooltip="mark-here"]:hover:after {
+    content: "This is a badass Tooltip";
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    width: max-content;
+    padding: 4px;
+}

@@ -1,0 +1,33 @@
+body {
+    font-size: 2.35vw;
+    letter-spacing: 0.125vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+}
+
+a[href="http://www.youtube.com"] {
+    color: firebrick;
+
+}
+
+a[href="http://www.google.com"] {
+    color: forestgreen;
+}
+
+a[href="http://www.youtube.com"]:after {
+    content: " (www.youtube.com)";
+
+}
+
+a[href="http://www.google.com"]:after {
+    content: " (www.google.com)";
+}
+
+a:hover {
+    background-color: #eee;
+}

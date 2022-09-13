@@ -1,0 +1,79 @@
+body {
+    height: 98vh;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+div:first-of-type {
+    color: white;
+    background-color: #222;
+    width: 320px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out:first-of-type::before,
+.out:first-of-type::after,
+.out:first-of-type>:first-child::before,
+.out:first-of-type>:first-child::after {
+    content: "";
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-color: white;
+    border-style: solid;
+}
+
+/* top-right */
+.out:first-of-type::before {
+    content: "";
+    bottom: 77px;
+    left: 295px;
+    border-width: 2px 2px 0 0;
+}
+
+/* bottom-right */
+.out:first-of-type::after {
+    content: "";
+    top: 77px;
+    left: 12px;
+    border-width: 0 2px 2px 0;
+
+}
+
+/* bottom-left */
+.out:first-of-type>:first-child::before {
+    content: "";
+    top: 77px;
+    left: -82px;
+    border-width: 0 0 2px 2px;
+}
+
+/* top-left */
+.out:first-of-type>:first-child::after {
+    content: "";
+    bottom: 77px;
+    left: -208px;
+    border-width: 2px 0 0 2px;
+}
+
+h3 {
+    color: #eee;
+    text-align: center;
+    padding: 1.5rem 1rem 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 3.5rem;
+    background-color: #444;
+    border-radius: 15px;
+    border: 2px solid #666;
+    font-size: 1.6rem;
+}
