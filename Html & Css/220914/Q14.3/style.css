@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+  background-color: #f5f1ed;
+}
+
+nav {
+  border-width: 0px;
+  width: 100vw;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background-color: #dad2bc;
+  border-bottom: 3px solid #5e6472;
+  border-style: ridge;
+}
+
+ul {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 0.2rem 0.5rem;
+  color: #333;
+}
+
+hr {
+  background-color: #333;
+  height: 4px;
+  margin: 0;
+}
+
+div {
+  position: relative;
+  overflow: hidden;
+}
+
+hr {
+  visibility: hidden;
+  position: relative;
+  width: 102%;
+  border-style: none;
+}
+
+.activateLines:hover .top {
+  visibility: visible;
+  animation-name: topLine;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+.activateLines:hover .bottom {
+  visibility: visible;
+  animation-name: bottomLine;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes topLine {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes bottomLine {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
