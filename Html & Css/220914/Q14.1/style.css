@@ -1,0 +1,46 @@
+:root {
+    --box-background-before: #0081a7;
+    --box-background-after: #023047;
+    --default-radius: 15px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fdfcdc;
+    width: 100vw;
+    height: 99vh;
+}
+
+.box {
+    width: 45vh;
+    height: 45vh;
+    margin: 15vh;
+    background-color: var(--box-background-before);
+    border-top-left-radius: var(--default-radius);
+    border-bottom-left-radius: var(--default-radius);
+    position: relative;
+    overflow: hidden;
+}
+
+.box::after {
+    content: "";
+    width: 45vh;
+    height: 45vh;
+    background-color: var(--box-background-after);
+    border-top-left-radius: var(--default-radius);
+    border-bottom-left-radius: var(--default-radius);
+    position: absolute;
+    transition: all 1.2s linear;
+    transform: translateX(45vh);
+
+}
+
+.box:hover::after {
+    background-color: var(--box-background-after);
+    transition: all 0.8s ease-in-out;
+    transform: translateX(0);
+}

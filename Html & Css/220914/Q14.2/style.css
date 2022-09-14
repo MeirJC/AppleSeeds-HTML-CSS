@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7ede2;
+    width: 100vw;
+}
+
+.container {
+    width: 800px;
+    height: max-content;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 3px solid black;
+    background-color: transparent;
+    width: max-content;
+    font-size: 25px;
+    padding: 25px 50px;
+    margin: 25px;
+}
+
+.style-1,
+.style-2,
+.style-3,
+.style-4,
+.style-5 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* TranslateY Button */
+.box.style-1::after {
+    /*  */
+    content: "Cool!!!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: beige;
+    /*  */
+    text-align: center;
+    padding: 1px;
+    width: 102%;
+    height: 81px;
+    left: -3px;
+    top: -85px;
+    background-color: #9a031e;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    transform: translateY(0%);
+
+}
+
+.box.style-1:hover::after {
+    content: "Cool!!!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: beige;
+    transition: all 0.8s ease-in-out;
+    transform: translateY(100%);
+}
+
+span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Translatex Button */
+.box.style-2::after {
+    content: "";
+    text-align: center;
+    padding: 1px;
+    width: 102%;
+    height: 81px;
+    left: -219px;
+    top: -2px;
+    background-color: #219ebc;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    transform: translateX(0%);
+
+}
+
+.box.style-2:hover::after {
+    content: "";
+    transition: all 0.8s ease-in-out;
+    transform: translateX(100%);
+}
+
+/* Rotate Button */
+.box.style-3::after {
+    content: "";
+    text-align: center;
+    padding: 1px;
+    width: 82px;
+    height: 168px;
+    left: -85px;
+    top: -2px;
+    background-color: #acbc21;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    transform: rotate(0);
+    transform-origin: top right;
+}
+
+.box.style-3:hover::after {
+    transition: all 0.8s ease-in-out;
+    transform: rotate(-90deg);
+}
+
+/* Skew Button */
+.box.style-5::after {
+    content: "";
+    text-align: center;
+    padding: 1px;
+    width: 155px;
+    height: 79px;
+    left: 0px;
+    top: -2px;
+    position: absolute;
+    transition: all 0.75s ease-in-out;
+    transform: rotateZ(540deg) scale(0.01) skew(0, 0);
+}
+
+.style-5:hover::before {
+    background-color: #ed1fc7;
+    transition: 0.75s ease-in-out;
+    transform: rotateZ(540deg) skew(0, 0);
+    transform-origin: center;
+}
+
+.style-5:hover::after {
+    background-color: #ed1fc7;
+    transition: 0.75s ease-in-out;
+    transform: rotateZ(540deg) scale(1) skew(0, 0) rotate3d(1, -10, -10, -1turn);
+    transform-origin: center;
+}
+
+.style-5:hover {
+    transition: 0.75s ease-in-out;
+    transform: skew(0, -10deg);
+    transform-origin: center;
+}
