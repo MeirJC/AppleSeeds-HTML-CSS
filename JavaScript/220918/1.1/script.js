@@ -5,7 +5,7 @@ let boolVar = true;
 let nullVar = null;
 let undefinedVar;
 let symbolVar = Symbol(stringVar);
-
+//----------------------------------------
 console.log(stringVar, typeof (stringVar));
 console.log(numVar, typeof (numVar));
 console.log(PersonObj, typeof (PersonObj));
