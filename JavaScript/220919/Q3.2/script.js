@@ -45,14 +45,19 @@ const powerImplicit = (a) => Math.pow(a, 2);
 // -------------------------------------------------------------
 /*const squareRoot = (a) => Math.sqrt(a);*/
 // -------------------------------------------------------------
-(function () {
+(function (a) {
   return Math.sqrt(a);
-})(a);
+})(1764);
+// 1746 (42 to the power of 2) is just to make the function
+// recive an argument, and not to run into an error. since it
+// calls and runs automaticly
 // -------------------------------------------------------------
 /*const randomNumbers = (a, b) => Math.random() * (a - b) + b;*/
 // -------------------------------------------------------------
-(() => {
-  console.log(Math.random() * (a - b) + b);
+((a, b) => {
   Math.random() * (a - b) + b;
-})(a, b);
+})(5, 7);
+// 5,7 is just to make the function
+// recive an argument, and not to run into an error. since it
+// calls and runs automaticly
 // -------------------------------------------------------------
