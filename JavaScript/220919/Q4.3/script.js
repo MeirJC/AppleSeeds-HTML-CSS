@@ -43,7 +43,7 @@ function whosTheWinner (allTeamArr) {
             // bigger then the tie score so initialize winnerList to contain one winner only
             winnerList = [0,0]
             winnerList[0] = allTeamArr[2 * k];
-            winnerList[1] = allTeamArr[2 * k +1]
+            winnerList[1] = allTeamArr[2 * k + 1]
         }
     }
     //FINALLY - The winner/winners announcment!
