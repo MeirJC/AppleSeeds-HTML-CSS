@@ -58,8 +58,8 @@ function whosTheWinner (allTeamArr) {
     }
 }
 //John,Mike - All scores as array
-let john = [150,120,150];
-let mike = [150,120,150];
+let john = [89,120,103];
+let mike = [116,94,123];
 // players - all players all gemes array
 let players = [john,mike]; // like [ [ 89, 120, 103 ], [ 116, 94, 123 ] ]
 // playerlist - list of player names
@@ -68,7 +68,7 @@ console.log("John and Mike:");
 console.log(whosTheWinner(scoresArray(playersList,players)));
 
 // -------- With mary
-let mary = [150,120,150];
+let mary = [97,134,105];
 players = [john,mike,mary]; // like [ [ 89, 120, 103 ], [ 116, 94, 123 ], [ 97, 134, 105 ] ]
 playersList = ["John ","Mike ","Mary "];
 console.log("John Mike and Mary:");
