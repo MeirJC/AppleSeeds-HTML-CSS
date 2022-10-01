@@ -12,3 +12,26 @@
 // element of the array.
 // 6. Push the result to the ‘percentages’ array.
 // 7. Return from the function the ‘percentages’ array.
+
+const populations = [338, 218, 127, 85];
+// [ usa, nigeria,mexico, turkey]
+
+const populationPercentages = (popArr) => {
+  const percentages = [];
+  for (let k = 0; k < popArr.length; k++) {
+    percentages[k] = percentageOfWorld1(popArr[k]);
+  }
+  return percentages;
+};
+
+// section 5 - import from 3.3
+const TOTAL_POPULATION = 7900;
+// function declaration
+function percentageOfWorld1(population) {
+  return ((population / TOTAL_POPULATION) * 100).toFixed(2);
+}
+
+// call to function execute
+
+let popPercentArr = populationPercentages(populations);
+console.log(popPercentArr);
